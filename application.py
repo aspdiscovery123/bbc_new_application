@@ -26,3 +26,9 @@ def prediction():
     out=model.predict(en_data)
     output=target_encoder.inverse_transform(out)
     return str(output)
+
+@app.route('/home',methods=['GET'])
+
+def prediction1():
+
+    return "hello"
