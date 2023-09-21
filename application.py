@@ -26,6 +26,3 @@ def prediction():
     out=model.predict(en_data)
     output=target_encoder.inverse_transform(out)
     return str(output)
-    
-app.run(host='0.0.0.0',port=5003)
-
